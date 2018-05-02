@@ -17,7 +17,7 @@ public class Category implements Serializable {
     @JsonIgnore
     private Category parent;
 
-    @OneToMany
+    @OneToMany(fetch = FetchType.LAZY)
     private List<Category> subcategories = new ArrayList<>();
 
     public Long getId() {

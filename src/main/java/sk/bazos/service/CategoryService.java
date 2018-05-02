@@ -24,7 +24,7 @@ public class CategoryService {
 
     @GetMapping
     public List<Category> getAllCategories() {
-        return categoryRepository.findAll();
+        return categoryRepository.findCategoriesByParentIsNull();
     }
 
     @GetMapping("/{id}")
