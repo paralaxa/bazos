@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("category")
-@Api(value = "add", description = "Basic crud over add entity.")
+@Api(value = "category", description = "Basic crud over category entity.")
 public class CategoryService {
 
     @Autowired
